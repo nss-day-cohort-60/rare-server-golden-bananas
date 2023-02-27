@@ -1,0 +1,11 @@
+[
+    {
+        "model": "rareapi.rareuser",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "bio": "I like paint",
+            "profile_image_url": "https://i.ytimg.com/vi/qbE65lhGpnY/maxresdefault.jpg"
+        }
+    }
+]

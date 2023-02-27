@@ -1,0 +1,54 @@
+[
+    {
+        "model": "rareapi.post",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "category": 2,
+            "title": "How to make cereal soup",
+            "publication_date": "2023-09-12",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Kellogg%27s_Corn_Flakes%2C_with_milk.jpg/800px-Kellogg%27s_Corn_Flakes%2C_with_milk.jpg",
+            "content": "Grab a bowl, pour milk first, then cereal, and finally let sit. Enjoy your Cereal Soup!",
+            "approved": true
+        }
+    },
+    {
+        "model": "rareapi.post",
+        "pk": 2,
+        "fields": {
+            "user": 1,
+            "category": 1,
+            "title": "How to play game",
+            "publication_date": "2021-03-10",
+            "image_url": "https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png",
+            "content": "Plug in game machine and have fun. You are Gamer!",
+            "approved": false
+        }
+    },
+    {
+        "model": "rareapi.post",
+        "pk": 3,
+        "fields": {
+            "user": 1,
+            "category": 4,
+            "title": "Learn new song fast",
+            "publication_date": "2000-01-01",
+            "image_url": "https://i.ytimg.com/vi/o8wM8inaqmo/mqdefault.jpg",
+            "content": "Make music box string vibrate. Nice Sounds!",
+            "approved": true
+        }
+    },
+    {
+        "model": "rareapi.post",
+        "pk": 4,
+        "fields": {
+            "user": 1,
+            "category": 3,
+            "title": "How to win Superb Owl",
+            "publication_date": "2000-02-01",
+            "image_url": "https://cdn.shopify.com/s/files/1/0329/2512/2693/products/MUSIC_CITY_MIRACLE_18x24_98d9d35a-52be-4b15-8542-16ba7236057e_1296x.png?v=1629308756",
+            "content": "Music City Tragedy",
+            "approved": true
+        }
+    }
+]

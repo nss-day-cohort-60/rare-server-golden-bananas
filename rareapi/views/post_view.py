@@ -85,14 +85,14 @@ class RareUserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = RareUser
-        fields = ( 'full_name', )
+        fields = ( 'id', 'full_name', )
 
 class CategorySerializer(serializers.ModelSerializer):
     """JSON serializer for categorys
     """
     class Meta:
         model = Category
-        fields = ( 'label',)
+        fields = ( 'id', 'label')
 
 
 class PostSerializer(serializers.ModelSerializer):

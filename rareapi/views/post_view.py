@@ -81,10 +81,26 @@ class PostView(ViewSet):
         return Response(None, status=status.HTTP_204_NO_CONTENT)
         
 
+class RareUserSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = RareUser
+        fields = ( 'full_name', )
+
+class CategorySerializer(serializers.ModelSerializer):
+    """JSON serializer for categorys
+    """
+    class Meta:
+        model = Category
+        fields = ( 'label',)
+
 
 class PostSerializer(serializers.ModelSerializer):
     """JSON serializer for games
     """
+    category = CategorySerializer()
+    user = RareUserSerializer()
+
     class Meta:
         model = Post
-        fields = ('id', 'title', 'publication_date', 'image_url', 'content', 'approved', 'category', 'user')
+        fields = ('id', 'title', 'publication_date', 'image_url', 'content', 'approved', 'category', 'user',)

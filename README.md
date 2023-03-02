@@ -1,8 +1,8 @@
 # rare-server-golden-bananas
-our server for team golden bananas
+Our server for team golden bananas
 
 
-This is the backend for the rare-client-golden-bananas
+This is the API for the [rare-client-golden-bananas](https://github.com/nss-day-cohort-60/rare-client-golden-bananas)
 
 
 ## Installation
@@ -10,14 +10,23 @@ Follow the steps below to download and run this project on your computer
 - [ ] Client is required for full functionality. [View client repo here](https://github.com/nss-day-cohort-60/rare-client-golden-bananas)
 - [ ] Clone this repository
 - [ ] From server directory, run "pipenv install"
+- [ ] Make sure to be in a virtual environment. "pipenv shell"
+- [ ] Run this code:
+```bash
+rm db.sqlite3
+rm -rf ./rareapi/migrations
+python3 manage.py migrate
+python3 manage.py makemigrations rareapi
+python3 manage.py migrate rareapi
+python3 manage.py loaddata users
+python3 manage.py loaddata tokens
+python3 manage.py loaddata rare_users
+python3 manage.py loaddata categories
+python3 manage.py loaddata posts
+```
 - [ ] Run "python manage.py runserver"
 
-For help with installations, go to [ChatGPT](https://chat.openai.com/chat)
-
-
-
-Make sure to be in a virtual environment.
-
+For more help with installations, go to [ChatGPT](https://chat.openai.com/chat)
 
 
 ## Sprint Team Contribution
